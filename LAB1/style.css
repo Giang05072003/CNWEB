@@ -1,0 +1,300 @@
+@import url("reset.css");
+
+body {
+    font: 400 15px arial;
+}
+
+.pd {
+    padding: 0% 22%;
+}
+
+.top-header,
+.nav-bar {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.top-header,
+.top-header img {
+    height: 50px;
+}
+
+.nav-bar ul {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    height: 50px;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.nav-bar li:hover {
+    cursor: pointer;
+    color: #065ed9;
+}
+
+.container {
+    background: #fcfaf6;
+    border-bottom: 1px solid #bdbdbd;
+}
+
+.main {
+    display: flex;
+    padding: 20px 0 0 0;
+}
+
+.left-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.breadcumb li {
+    display: inline-block;
+}
+
+.breadcumb {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.date {
+    color: #757575;
+}
+
+.left {
+    flex: 2;
+}
+
+.left-title {
+    font-size: 32px;
+    line-height: 150%;
+    font-family: "Merriweather",serif;
+    font-weight: bold;
+    margin-bottom: 15px
+}
+
+.description {
+    font: 400 18px arial;
+    line-height: 160%;
+    margin-bottom: 15px;
+}
+
+.Normal {
+    margin: 0 0 1em;
+    line-height: 160%;
+    text-rendering: optimizeSpeed;
+    font: 400 18px arial;
+}
+
+.with-common {
+    padding: 15px;
+    background: #fff;
+    margin-bottom: 20px;
+    border: 1px solid #e5e5e5;
+}
+
+.item-news {
+    display: flex;
+}
+
+.item-news-main {
+    display: flex;
+    flex-direction: column;
+}
+
+.thumb-art {
+    width: 145px;
+    margin-right: 10px;
+    position: relative;
+}
+
+.des {
+    font-size: 14px;
+    margin-bottom: 0;
+    line-height: 160%;
+}
+
+.title-news {
+    font-size: 15px;
+    font-weight: bold;
+    font-family: "Merriweather",serif;
+    margin-bottom: 4px;
+    line-height: 160%;
+}
+
+.author {
+    text-align: right;
+    font-size: 18px;
+    margin-bottom: 20px;
+    line-height: 160%;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+}
+
+.right-header span {
+    border-bottom: 1px solid #9f224e;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.6;
+    font-family: "Merriweather",serif;
+    color: #222;
+    font-weight: bold;
+}
+
+.right-header {
+    margin-bottom: 12px;
+}
+
+.right-header span:hover {
+    cursor: pointer;
+    color: #9f224e;
+}
+
+.right-item {
+    display: flex;
+    font-family: "Merriweather",serif;
+    font-size: 14px;
+    line-height: 160%;
+    margin-bottom: 16px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #E5E5E5;
+}
+
+.right-item img {
+    height: 66px;
+    width: 110px;
+    margin-right: 10px;
+}
+
+.right-item a {
+    font-size: 14px;
+    color: #222222;
+    text-decoration: none;
+}
+
+.right-item img:hover, a:hover {
+    cursor: pointer;
+    color: #087cce;
+}
+
+.head-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+    font-size: 14px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.head-left {
+    display: flex;
+    align-items: center;
+}
+
+.head-right a,
+.txt-follow {
+    color: #9F9F9F;
+    text-decoration: none;
+}
+
+.head-right a:hover {
+    text-decoration: underline;
+}
+
+.txt-follow {
+    margin-left: 10px;
+    padding-left: 10px;
+    border-left: 1px solid #e5e5e5;
+}
+
+.fa-brands {
+    color: #9F9F9F;
+    margin-left: 5px;
+}
+
+.fa-facebook-f {
+    margin-left: 10px;
+}
+
+.end-footer {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.end-footer p {
+    width: 30%;
+}
+
+
+@media only screen and (max-width: 1585px) {
+
+    .pd {
+        padding: 0% 5%;
+    }
+
+}
+
+@media only screen and (max-width: 840px) {
+
+    .pd {
+        padding: 0% 2%;
+    }
+
+    .right {
+        flex: none;
+    }
+
+    .left {
+        flex: none;
+    }
+
+    .main {
+        flex-direction: column;
+    }
+
+    .nav-bar li {
+        display: none;
+    }
+
+    .head-right {
+        display: none;
+    }
+
+    .left-header {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .head-footer {
+        display: flex;
+        align-items: center;
+    }
+
+    .end-footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .end-footer p {
+        width: 100%;
+    }
+
+    .des {
+        display: none;
+    }
+
+}
